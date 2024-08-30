@@ -1,0 +1,162 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(135, 1, 145); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(162, 2, 170); 
+}
+
+.container {
+    width: 100%;
+    height: 200vh;
+    background: rgb(61,0,242);
+    background: linear-gradient(90deg, rgba(61,0,242,0.6111694677871149) 0%, rgba(9,148,32,1) 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header {
+    font-size: 28px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+/* Message Section */
+.message-section {
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.msg-box {
+    padding: 10px;
+    width: 35%;
+    border: 1px solid black;
+    font-size: 20px;
+    margin: 20px 15px;
+    border-radius: 5px;
+    clear: both;
+    word-break: break-all;
+    box-shadow: 5px 5px #8b8b8b;
+}
+
+.received {
+    float: left;
+    background-color: rgb(255, 252, 214);
+}
+
+.send {
+    float: right;
+    background-color: rgb(214, 255, 214);
+}
+
+/* Input Section */
+.input-section {
+    border: 1px solid black;
+    height: 60px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #969696;
+    border-radius: 10px;
+    margin: 0px 5px;
+    background: transparent;
+
+}
+
+.input:focus {
+    border: 2px solid #757575;
+    outline: none;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 8px 15px;
+    border: 2px solid rgb(180, 176, 176);
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(98, 0, 98);
+    color: white;
+    margin: 0px 5px;
+    background: transparent;
+}
+
+.btn:hover {
+    background: rgb(69, 0, 69);
+}
+
+/* Search Functionality Styles */
+#searchUser {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    margin: 10px 5px;
+    background: transparent;
+
+}
+
+#btnSearch {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(135, 1, 145);
+    color: white;
+    margin: 10px 5px;
+
+}
+
+#btnSearch:hover {
+    background: rgb(162, 2, 170);
+}
+
+#searchResults {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    background: transparent;
+}
+#searchUser::placeholder {
+  color: white; /* Change this color to your desired placeholder color */
+}
